@@ -1,0 +1,338 @@
+/* Шрифты */
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?3536224');
+  src: url('../fonts/fontello.eot?3536224#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?3536224') format('woff2'),
+       url('../fonts/fontello.woff?3536224') format('woff'),
+       url('../fonts/fontello.ttf?3536224') format('truetype'),
+       url('../fonts/fontello.svg?3536224#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before,
+ [class^="icon-"]:after, [class*=" icon-"]:after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  position: absolute;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-comment:before { content: '\e800';} /* '' */
+.icon-tag:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-menu:before { content: '\e803'; } /* '' */
+.icon-eye-1:before { content: '\e804'; } /* '' */
+.icon-fire:before { content: '\e805'; } /* '' */
+.icon-info-circled-alt:after { content: '\e806';} /* '' */
+.icon-mail:after { content: '\e807';} /* '' */
+.icon-down-open-big:after { content: '\e808';} /* '' */
+.icon-left-open-big:before { content: '\e809'; } /* '' */
+.icon-right-open-big:after { content: '\e80a'; } /* '' */
+.icon-up-open-big:before { content: '\e80b'; } /* '' */
+.icon-clock:before { content: '\e80c'; } /* '' */
+.icon-star:before { content: '\e80d'; } /* '' */
+.icon-thumbs-up:before { content: '\e80e'; } /* '' */
+.icon-pencil:before { content: '\e80f'; } /* '' */
+
+/* Переменные */
+
+@dark-blue: #061f39;
+@blue: #004488;
+@light-blue: #0055ab;
+@hover-blue: #0058b0;
+@red: #d21717;
+@light-red: #ee3939;
+@grey: #858f99;
+@light-grey: #e5e9ed;
+
+/* Стили для основных элементов */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: @light-grey;
+}
+
+p,
+input,
+textarea,
+li {
+	font-family: 'Arial';
+	box-shadow: none;
+}
+
+blockquote {
+	position: relative;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #858f99;
+	padding-left: 30px;
+	margin-right: 0;
+	margin-left: 0;
+	&:before {
+		content: '';
+		position: absolute;
+		background-color: @light-blue;
+		width: 5px;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+a {
+	color: @light-blue;
+	text-decoration: none;
+	&:hover {
+		color: @red;
+	}
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	color: @dark-blue;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 800;
+	color: @dark-blue;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 36px;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+ul, ol {
+	padding-left: 25px;
+	margin: 30px 0;
+}
+
+li {
+	font-size: 16px;
+	line-height: 22px;
+	color: #000;
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+ul.unordered-list,
+ol.ordered-list {
+	font-size: 0;
+	color: #000;
+	padding-left: 25px;
+	margin: 30px 0;
+}
+
+.unordered-list li,
+.ordered-list li {
+	font-size: 16px;
+	line-height: 18px;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.ordered-list span {
+	color: @light-blue;
+	font-weight: bold;
+	position: absolute;
+	left: -25px;
+}
+
+.unordered-list span {
+	color: @light-blue;
+	font-weight: bold;
+	position: relative;
+	left: -25px;
+	&:before {
+		content: '•';
+		position: absolute;
+		font-size: 28px;
+		left: 0;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: @grey;
+}
+
+::-moz-placeholder {
+	color: @grey;
+}
+
+:-moz-placeholder {
+	color: @grey;
+}
+
+:-ms-input-placeholder {
+	color: @grey;
+}
+
+input:not([type="checkbox"]),
+input:not([type="radio"]) {
+	-webkit-appearance: none;
+}
+
+input::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.checkbox:not(checked) + label,
+.radio:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 23px;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.checkbox:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 17px;
+	height: 17px;
+	background-color: #fff;
+	border: 2px solid @light-grey;
+	border-radius: 4px;
+}
+
+.checkbox:checked + label:before {
+	border-color: @light-blue;
+	background-image: url(../img/checkbox.png);
+	background-repeat: no-repeat;
+	background-size: 13px 11px;
+}
+
+.radio:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 17px;
+	height: 17px;
+	background-color: #fff;
+	border: 2px solid @light-grey;
+	border-radius: 50%;
+}
+
+.radio:checked + label:before {
+	background-image: url(../img/radio.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+button {
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+}
+
+.hint-comment {
+	font-size: 14px;
+	line-height: 18px;
+	font-style: italic;
+	color: @grey;
+}
+
+.hint-comment--blu-big {
+	color: @light-blue;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.float-img {
+	img {
+		width: auto;
+		height: auto;
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.img-responsive {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1330px;
+	padding: 0 28px;
+}
+.content-text-block {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 0 60px;
+  padding-bottom: 15px;
+  font-size: 0;
+}

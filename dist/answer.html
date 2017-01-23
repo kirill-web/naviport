@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ответ на вопрос</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="page-header__topbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="col-md-3">
+						<a href="about.html" class="icon-info-circled-alt page-header__topbar-about">О проекте</a>
+					</div>
+					<a href="#" class="icon-mail page-header__topbar-callback--mini"></a>
+					<div class="col-md-5 col-sm-7 page-header__topbar-hotline">
+						<span>Бесплатная горячая линия</span>
+						<span class="tel">8-800-500-43-69</span>
+					</div>
+					<div class="col-md-4 col-sm-5 col-xs-12 page-header__topbar-entrance">
+						<a href="#" class="log-in"><span>Войти</span></a>
+						<a href="#" class="sign-in">Зарегистироваться</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-header__mainbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="page-header__company col-md-6 col-xs-8">
+						<a href="index.html" class="page-header__logo">
+							<img src="img/logo_naviport.svg" alt="Naviport" width="168" height="28">
+						</a>
+						<div class="page-header__info"><span>Информационный портал о российской тахографии</span></div>
+					</div>
+					<div class="col-md-6 col-xs-4 search-opened">
+						<form action="#">
+							<i class="border"></i>
+							<input type="text" placeholder="Что вы ищите?">
+							<button type="submit" class="search-toggle"></button>
+						</form>
+					</div>
+					<nav class="col-md-5 page-header__nav">
+						<ul>
+							<li><a href="#" class="icon-down-open-big" id="info-toggle"><span>Инфоцентр</span></a></li>
+							<li><a href="#">Решения</a></li>
+							<li><a href="#">Мастерские</a></li>
+						</ul>
+					</nav>
+					<div class="col-md-1 col-xs-4 page-header__menu-btns">
+						<a href="#" class="menu-toggle"></a>
+						<a href="#" class="search-toggle" id="search-open"></a>
+						<div class="page-header__menu--mini accordion" id="accordion">
+							<h3>Инфоцентр</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Новости и статьи</a></li>
+									<li><a href="authors.html">Авторы и эксперты</a></li>
+									<li><a href="#">Электронная общественная приемная</a></li>
+								</ul>
+							</div>
+							<h3>Решения</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Пункт 1</a></li>
+									<li><a href="#">Пункт 2</a></li>
+									<li><a href="#">Пункт 3</a></li>
+								</ul>
+							</div>
+							<a href="#">Мастерские</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<div class="row no-margin">
+						<div class="col-md-3 dropdown-menu__nav">
+							<ul>
+								<li><a href="#" class="dropdown-menu__nav-item active" id="first-nav">Новости и статьи</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="second-nav">Авторы и эксперты</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="third-nav">Электронная общественная приемная</a></li>
+							</ul>
+						</div>
+						<div class="col-md-9 dropdown-menu__content">
+							<div class="dropdown-menu__content-item" id="news">
+								<div class="newslist__small">
+									<div class="row no-margin">
+										<div class="col-md-3 newslist__small-item expert-opi">
+											<a href="#"><img src="img/a-photo-1.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Болгары очень дружелюбны, 
+приветливы, и особенно
+									гостеприимны</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-2.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Геннадий Мирошин: «К 2018 году 
+система тахографического 
+контроля будет окончательно 
+									построена»</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more newslist__small-btn">Все новости и статьи</a>
+								</div>
+							</div>
+							<div class="dropdown-menu__content-item" id="authors">
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="img/photo-1.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Беспалова Оксана Александровна</a></h3>
+											<p class="authors__item-position">Коммерческий директор ООО «Тахобанк»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Сушинов Юрий</a></h3>
+											<p class="authors__item-position">Шеф-редактор Навипорта</p>
+										</div>
+									</div>
+								</div>
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-2.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Конягин Кирилл Александрович</a></h3>
+											<p class="authors__item-position">Генеральный директор «Атол Драйв»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-3.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Мирошин Геннадий Святославович</a></h3>
+											<p class="authors__item-position">Эксперт Ассоциации организаций в сфере развития тахографического контроля «Рустахоконтроль»</p>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="icon-right-open-big questions__more authors__item-btn">Все авторы и эксперты</a>
+							</div>
+							<div class="dropdown-menu__content-item" id="info">
+								<div class="popular-qs">
+									<h2 class="popular-qs__title">Популярные вопросы</h2>
+									<div class="row no-margin">
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли использовать тахограф 
+без СКЗИ?</a>
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Отличия тахографов ЕСТР
+Можно ли иметь больше одной 
+карты водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">Как правильно работать
+по тахографу?</a>
+										</div>
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Какой срок изготовления карты 
+водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">На какой транспорт необходимо
+устанавливать тахографы?</a>
+											<a href="" class="popular-qs__item">Аналоговые тахографы запрещены?</a>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more popular-qs__btn">Все вопросы и ответы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="container">
+			<div class="row no-margin">
+				<section class="col-md-8 col-xs-12 main-content">
+					<div class="breadcrumbs">
+						<div class="row no-margin">
+							<ul class="col-sm-8 col-xs-12">
+								<li><a href="#">Инфоцентр</a></li>
+								<span class="slash"> / </span>
+								<li><a href="authors.html">Электронная общественная приемная</a></li>
+								<span class="slash"> / </span>
+								<li><a href="#">Карты тахографов</a></li>
+							</ul>
+							<div class="col-sm-4 col-xs-12 datetime">
+								<span class="icon-clock">12 января, 12:35</span>
+							</div>
+						</div>
+					</div>
+					<section class="answer-block">
+						<h1 class="answer-block__title">Как разблокировать карту
+водителя?</h1>
+						<div class="ya-social">
+							<div class="row">
+								<div class="ya-social__btns col-sm-9 col-xs-12">
+									<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj" data-counter=""></div>
+								</div>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">1</div>
+									<div class="icon-eye-1 views">234</div>
+								</div>
+							</div>
+						</div>
+						<blockquote>Вопрос, который имеет сейчас большую популярность среди перевозчиков.</blockquote>
+						<p>Итак, для начала определимся, какая у вас карта: ЕСТР, СКЗИ или карта водителя для тахографа без блока СКЗИ (Технический регламент). Все карты ЕСТР и карты по Техническому регламенту не имеют паролей. С ними проблем быть не должно. Если эти карты не работают, скорее всего, они вышли из строя и вам необходимо сделать новую карту. </p>
+						<p>Если у вас заблокировалась карта водителя СКЗИ, значит 3 раза был неправильно введен пин-код.</p>
+						<h2 class="answer-block__subtitle">Если вы в другом городе</h2>
+						<p>Если вы в другом городе, то вам необходимо позвонить нам по номеру 8 800 500 43 69, сделать запрос на приобретение программы для разблокировки карты водителя, а также в случае утери данных PIN-кода и PUK-кода, сообщить ФИО и номер карты, начинающийся с букв RUD. Наши специалисты отправят вам на электронную почту БЕСПЛАТНО программу для разблокировки карты и инструкцию для работы, а также данные PIN-кода и PUK-кода. Для разблокировки карты вам понадобится считыватель для карт тахографа, который вы также можете приобрести у нас.</p>
+						<p>Отправить запрос на приобретение программы для разблокировки карты водителя вы можете здесь (здесь кнопка захвата) Если при проведении манипуляций с картой по ее разблокировке карта все равно не работает в тахографе, возможно она вышла из строя. Для выявления проблемы ее необходимо направить к нам для диагностики на заводе. Средний срок диагностики карты достигает до 1 месяца. Поэтому просим вас эксплуатировать карту водителя достаточно бережно, чтобы избежать проблем со штрафами за отсутствие карты в тахографе.</p>
+						<div class="ya-social">
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj" data-counter=""></div>
+						</div>
+						<div class="answer-block__tags">
+							<div class="row no-margin">
+								<h3 class="col-sm-2 col-xs-12 icon-tag answer-block__tags-title">Метки:</h3>
+								<div class="col-sm-10 col-xs-12 answer-block__tags-item">
+									<a href="">Система тахографического контроля,</a>
+									<a href=""> Тахография,</a>
+									<a href="">Мирошин, </a>
+									<a href="">Будущее тахографии, </a>
+									<a href="">законы, </a>
+									<a href="">штрафы,</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="comments-section">
+						<h2 class="comments-section__title">Комментарии</h2>
+						<div class="comments-section__item">
+							Обсуждение временно недоступно. В скором времени мы вернем возмможность обсуждения материалов, следите за обновдениями!
+						</div>
+					</div>
+					<section class="ask-question">
+						<h3 class="ask-question__title">Задать вопрос на тему "карты тахографов"</h3>
+						<form action="#" class="ask-question__form">
+							<input type="text" name="name" placeholder="Ваше имя">
+							<span class="hint-comment">Чтобы мы знали, как к вам обращаться</span>
+							<input type="email" name="email" placeholder="Ваша электронная почта">
+							<span class="hint-comment">Сюда мы отправим ответ</span>
+							<textarea name="question" cols="30" rows="8" placeholder="Какой у вас вопрос"></textarea>
+							<span class="hint-comment">Опишите ваш вопрос или проблему</span>
+							<input type="submit" value="Задать свой вопрос" class="ask-question__form-send">
+							<span class="hint-comment">Срок рассмотрения обращений - до 3 дней</span>
+							<p class="error-text">Необходимо указать электронную почту
+или мы не сможем отправить письмо</p>
+						</form>
+					</section>
+					<section class="more-questions">
+						<h2 class="more-questions__title">Еще вопросы по теме «Карты тахографов»</h2>
+						<div class="more-questions__item">
+							<div class="row no-margin">
+								<h3 class="col-sm-9 col-xs-12 more-questions__item-title"><a href="">Постановление Правительства РФ № 579</a></h3>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">4</div>
+									<div class="icon-eye-1 views">106</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-questions__item">
+							<div class="row no-margin">
+								<h3 class="col-sm-9 col-xs-12 more-questions__item-title"><a href="">Приказ Министерства транспорта Российской Федерации (Минтранс России) от 28 октября 2013 г. </a></h3>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">4</div>
+									<div class="icon-eye-1 views">106</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-questions__item">
+							<div class="row no-margin">
+								<h3 class="col-sm-9 col-xs-12 more-questions__item-title"><a href="">Приказ Министерства транспорта Российской Федерации (Минтранс России)</a></h3>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">4</div>
+									<div class="icon-eye-1 views">106</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-questions__item">
+							<div class="row no-margin">
+								<h3 class="col-sm-9 col-xs-12 more-questions__item-title"><a href="">Приказ Минтранса России от 13.11.2012 N 397</a></h3>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">4</div>
+									<div class="icon-eye-1 views">106</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-questions__item">
+							<div class="row no-margin">
+								<h3 class="col-sm-9 col-xs-12 more-questions__item-title"><a href="">Федеральный закон от 14 июня 2012 г. № 78-ФЗ</a></h3>
+								<div class="col-sm-3 col-xs-12 activity">
+									<div class="icon-comment comments">4</div>
+									<div class="icon-eye-1 views">106</div>
+								</div>
+							</div>
+						</div>
+						<a href="questions.html" class="icon-left-open-big more-questions__back-btn">К списку вопросов про карты тахографов</a>
+					</section>
+				</section>
+				<aside class="col-md-4 col-xs-12 secondary-content">
+					<div class="newest-questions">
+						<h4 class="newest-questions__title">Популярные вопросы</h4>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Рост числа мастерских 
+								в 2015 году</a></h5>
+							<div class="icon-comment comments">127</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Мастерским необходимо
+								получать новые разрешения и документы</a></h5>
+							<div class="icon-comment comments">4</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Отчет по рейду №7</a></h5>
+							<div class="icon-comment comments">0</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Штрафы растут. Новое
+								в 2016 году</a></h5>
+							<div class="icon-comment comments">13</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Отмена аналоговых тахографов. Обзор альтернатив</a></h5>
+							<div class="icon-comment comments">1</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<a href="#" class="icon-right-open-big newest-questions__btn">Все новости</a>
+					</div>
+					<div class="rss-block">
+						<h4 class="rss-block__title">Рассылка навипорта</h4>
+						<form action="#" class="rss-block__form">
+							<input class="rss-block__email" type="email" placeholder="Введите ваш E-mail">
+							<button type="submit" class="rss-block__btn"></button>
+							<p class="error-text">Необходимо указать электронную почту
+или мы не сможем отправить письмо</p>
+						</form>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<section class="page-footer__nav">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Инфоцентр</h4>
+						<ul>
+							<li>
+								<a href="#">Новости и статьи</a>
+							</li>
+							<li>
+								<a href="#">Электронная общественная приемная</a>
+							</li>
+							<li>
+								<a href="authors.html">Авторы и эксперты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Решения</h4>
+						<ul>
+							<li>
+								<a href="#">Мастерским</a>
+							</li>
+							<li>
+								<a href="#">Перевозчикам</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Мастерские</h4>
+						<ul>
+							<li>
+								<a href="#">Сеть мастерских</a>
+							</li>
+							<li>
+								<a href="#">Черный список мастерских</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Naviport</h4>
+						<ul>
+							<li>
+								<a href="#">О проекте</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page-footer__bottombar">
+				<div class="row">
+					<div class="col-md-9 col-xs-12 copywrites">
+						<p class="copywrites__copy">© 2016 Naviport. Информационный портал о российской тахографии</p>
+						<a href="#" class="copywrites__using">Пользовательское соглашение</a>
+						<div class="copywrites__callback">
+							<span class="copywrites__tel">8-800-500-43-69</span>
+							<a href="#" class="copywrites__callback-btn">Обратная связь</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-pull-1 col-xs-12 ya-social">
+						<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj" data-counter=""></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="https://yastatic.net/share2/share.js" charset="utf-8"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

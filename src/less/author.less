@@ -1,0 +1,144 @@
+.author {
+	background-color: #fff;
+	padding: 18px 25px 60px 60px;
+	&__title {
+		margin: 0;
+		margin-bottom: 55px;
+		letter-spacing: -1px;
+	}
+	&__info {
+		font-size: 0;
+	}
+	&__img {
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		margin-right: 36px;
+		&:before {
+			left: ~"calc(100% - 80px)";
+		}
+	}
+	&__descr {
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		&-item {
+			margin-bottom: 18px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&-title {
+			margin-top: 0;
+			font-size: 16px;
+			font-weight: 800;
+			margin-bottom: 2px;
+		}
+		&-info {
+			margin: 0;
+			margin-top: 3px;
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+}
+
+.back-to-authors {
+	padding: 18px 30px 20px 80px;
+	background-color: #fff;
+	border-top: 2px solid @light-grey;
+	margin-bottom: 20px;
+	a {
+		position: relative;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: @dark-blue;
+		&:before {
+			position: absolute;
+			font-size: 15px;
+			color: @grey;
+			left: -25px;
+			top: 1px;
+		}
+		&:hover,
+		&:hover:before {
+			color: @red;
+		}
+	}
+}
+
+.author-articles {
+	background-color: #fff;
+	&__title {
+		font-size: 15px;
+		text-transform: uppercase;
+		padding: 18px 25px 10px 60px;
+		margin-bottom: 0;
+		border-bottom: 2px solid @light-grey;
+		letter-spacing: 2px;
+	}
+	&__item {
+		padding: 30px 30px 30px 60px;
+		border-bottom: 1px solid @light-grey;
+		font-size: 0;
+		&:last-of-type {
+			border-bottom: 0;
+		}
+		&>a {
+			position: relative;
+			display: inline-block;
+			margin-right: 35px;
+			&:after {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: #061f39;
+				opacity: 0;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+			&:hover:after {
+				opacity: 0.4;
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__descr {
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		h3 {
+			margin-top: 0;
+			margin-bottom: 17px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 12px;
+			font-size: 14px;
+			font-weight: 500;
+			color: @dark-blue;
+		}
+	}
+	&__btn {
+		margin-bottom: 55px;
+		margin-top: 14px;
+		padding-right: 55px;
+		&:after {
+			margin-left: 21px;
+		}
+	}
+}
+
+.all-news {
+	.back-to-authors;
+}

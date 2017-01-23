@@ -1,0 +1,119 @@
+.authors {
+	background-color: #fff;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	&__title {
+		padding-left: 60px;
+		margin-top: 0;
+		margin-bottom: 0;
+		letter-spacing: -1px;
+	}
+	&__item {
+		padding: 33px 25px 25px 60px;
+		border-bottom: 1px solid @light-grey;
+		&:first-of-type {
+			padding-top: 38px;
+		}
+		&:last-of-type {
+			border-bottom: 0;
+		}
+		&-img {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 42px;
+			width: 80px;
+			height: 80px;
+			background-color: @grey;
+		}
+		&-descr {
+			display: inline-block;
+			vertical-align: top;
+			width: 70%;
+		}
+		&-title {
+			margin-top: 0;
+			margin-bottom: 7px;
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: bold;
+			color: @light-blue;
+		}
+		&-position {
+			color: @grey;
+			font-size: 15px;
+			line-height: 20px;
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+		&-article {
+			position: relative;
+			font-size: 13px;
+			color: @grey;
+			padding-left: 20px;
+			.number {
+			font-family: 'Open Sans';
+			font-weight: bold;
+			color: @light-blue;
+			font-size: 12px;
+			margin-right: 5px;
+		}
+			&:before {
+				position: absolute;
+				top: 3px;
+				left: 0;
+				font-size: 12px;
+			}
+			&:hover .number {
+				color: @red;
+			}
+		}
+	}
+}
+.edition:before, 
+.expert:before,
+.expert-opi:before,
+.important:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 11px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	width: 90px;
+	height: 26px;
+	padding-top: 4px;
+	top: -20px;
+	left: 6px;
+}
+.edition:before {
+	content: 'Редакция';
+	background-color:@red ;
+}
+.expert:before {
+	content: 'Эксперт';
+	background-color: @light-blue;
+}
+.expert-opi:before {
+	content: 'Мнение эксперта';
+	background-color: @blue;
+	top: 20px;
+	left: 0;
+	width: 155px;
+	font-size: 12px;
+	line-height: 24px;
+	height: 32px;
+}
+.important:before {
+	content: 'Важно';
+	top: 20px;
+	left: 0;
+	font-size: 12px;
+	line-height: 24px;
+	height: 32px;
+	background-color: @red;
+}

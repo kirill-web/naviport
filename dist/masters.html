@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Сервисы</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="page-header__topbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="col-md-3">
+						<a href="about.html" class="icon-info-circled-alt page-header__topbar-about">О проекте</a>
+					</div>
+					<a href="#" class="icon-mail page-header__topbar-callback--mini"></a>
+					<div class="col-md-5 col-sm-7 page-header__topbar-hotline">
+						<span>Бесплатная горячая линия</span>
+						<span class="tel">8-800-500-43-69</span>
+					</div>
+					<div class="col-md-4 col-sm-5 col-xs-12 page-header__topbar-entrance">
+						<a href="#" class="log-in"><span>Войти</span></a>
+						<a href="#" class="sign-in">Зарегистироваться</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-header__mainbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="page-header__company col-md-6 col-xs-8">
+						<a href="index.html" class="page-header__logo">
+							<img src="img/logo_naviport.svg" alt="Naviport" width="168" height="28">
+						</a>
+						<div class="page-header__info"><span>Информационный портал о российской тахографии</span></div>
+					</div>
+					<div class="col-md-6 col-xs-4 search-opened">
+						<form action="#">
+							<i class="border"></i>
+							<input type="text" placeholder="Что вы ищите?">
+							<button type="submit" class="search-toggle"></button>
+						</form>
+					</div>
+					<nav class="col-md-5 page-header__nav">
+						<ul>
+							<li><a href="#" class="icon-down-open-big" id="info-toggle"><span>Инфоцентр</span></a></li>
+							<li><a href="#">Решения</a></li>
+							<li><a href="#">Мастерские</a></li>
+						</ul>
+					</nav>
+					<div class="col-md-1 col-xs-4 page-header__menu-btns">
+						<a href="#" class="menu-toggle"></a>
+						<a href="#" class="search-toggle" id="search-open"></a>
+						<div class="page-header__menu--mini accordion" id="accordion">
+							<h3>Инфоцентр</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Новости и статьи</a></li>
+									<li><a href="authors.html">Авторы и эксперты</a></li>
+									<li><a href="#">Электронная общественная приемная</a></li>
+								</ul>
+							</div>
+							<h3>Решения</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Пункт 1</a></li>
+									<li><a href="#">Пункт 2</a></li>
+									<li><a href="#">Пункт 3</a></li>
+								</ul>
+							</div>
+							<a href="#">Мастерские</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<div class="row no-margin">
+						<div class="col-md-3 dropdown-menu__nav">
+							<ul>
+								<li><a href="#" class="dropdown-menu__nav-item active" id="first-nav">Новости и статьи</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="second-nav">Авторы и эксперты</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="third-nav">Электронная общественная приемная</a></li>
+							</ul>
+						</div>
+						<div class="col-md-9 dropdown-menu__content">
+							<div class="dropdown-menu__content-item" id="news">
+								<div class="newslist__small">
+									<div class="row no-margin">
+										<div class="col-md-3 newslist__small-item expert-opi">
+											<a href="#"><img src="img/a-photo-1.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Болгары очень дружелюбны, 
+приветливы, и особенно
+									гостеприимны</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-2.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Геннадий Мирошин: «К 2018 году 
+система тахографического 
+контроля будет окончательно 
+									построена»</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more newslist__small-btn">Все новости и статьи</a>
+								</div>
+							</div>
+							<div class="dropdown-menu__content-item" id="authors">
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="img/photo-1.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Беспалова Оксана Александровна</a></h3>
+											<p class="authors__item-position">Коммерческий директор ООО «Тахобанк»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Сушинов Юрий</a></h3>
+											<p class="authors__item-position">Шеф-редактор Навипорта</p>
+										</div>
+									</div>
+								</div>
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-2.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Конягин Кирилл Александрович</a></h3>
+											<p class="authors__item-position">Генеральный директор «Атол Драйв»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-3.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Мирошин Геннадий Святославович</a></h3>
+											<p class="authors__item-position">Эксперт Ассоциации организаций в сфере развития тахографического контроля «Рустахоконтроль»</p>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="icon-right-open-big questions__more authors__item-btn">Все авторы и эксперты</a>
+							</div>
+							<div class="dropdown-menu__content-item" id="info">
+								<div class="popular-qs">
+									<h2 class="popular-qs__title">Популярные вопросы</h2>
+									<div class="row no-margin">
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли использовать тахограф 
+без СКЗИ?</a>
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Отличия тахографов ЕСТР
+Можно ли иметь больше одной 
+карты водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">Как правильно работать
+по тахографу?</a>
+										</div>
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Какой срок изготовления карты 
+водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">На какой транспорт необходимо
+устанавливать тахографы?</a>
+											<a href="" class="popular-qs__item">Аналоговые тахографы запрещены?</a>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more popular-qs__btn">Все вопросы и ответы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="container">
+			<div class="row no-margin">
+				<section class="col-md-8 col-xs-12 main-content">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Naviport</a></li>
+							<span class="slash"> / </span>
+						</ul>
+					</div>
+					<div class="services-promo">
+						<h1 class="services-promo__title">Мастерские партнеры</h1>
+						<h2 class="services-promo__subtitle">Доверяйте свой транспорт проверенным 
+партнёрам</h2>
+						<div class="services-promo__numbers"><span>125</span><p>лицензированных мастерских по всей России</p></div>
+					</div>
+					<div class="masters">
+						<div class="masters__sort">
+							<div class="city"><span>Ваш город</span>
+								<select name="city" id="" class="simple-select">
+									<option value="#">Санкт-Петербург</option>
+									<option value="#">Москва</option>
+									<option value="#">Сочи</option>
+								</select>
+							</div>
+							<div class="type"><span>Выводить по</span>
+								<select name="type" id="" class="simple-select">
+									<option value="#">алфавиту</option>
+									<option value="#">рейтингу</option>
+									<option value="#">чему-то еще</option>>
+								</select>
+							</div>
+						</div>
+						<a href="#" class="masters__item">
+							<div class="masters__item-numbers">
+								<span>РФ 0564</span>
+								<span>RUS 603</span>
+								<span>ФСБ 00124675 от 16.12.2014</span>
+							</div>
+							<div class="masters__item-content">
+								<h2 class="masters__title">«Тахобанк»</h2>
+								<div class="masters__city">Москва</div>
+								<div class="masters__recall"><span>2</span><button class="recall-btn">отзыва</button></div>
+								<div class="masters__img"><img src="img/fond-logo.png" alt=""><div class="masters__tooltip">Участник благотворительного фонда "Шанс на счастье"</div></div>
+							</div>
+						</a>
+						<a href="#" class="masters__item">
+							<div class="masters__item-numbers">
+								<span>РФ 0564</span>
+								<span>RUS 603</span>
+								<span>ФСБ 00124675 от 16.12.2014</span>
+							</div>
+							<div class="masters__item-content">
+								<h2 class="masters__title">«Автокомфорт»</h2>
+								<div class="masters__city">Барнаул</div>
+								<div class="masters__recall"><span>6</span><button class="recall-btn">отзывов</button></div>
+								<div class="masters__img"><img src="img/fond-logo.png" alt=""><div class="masters__tooltip">Участник благотворительного фонда "Шанс на счастье"</div></div>
+							</div>
+						</a>
+						<a href="#" class="masters__item">
+							<div class="masters__item-numbers">
+								<span>РФ 0564</span>
+								<span>RUS 603</span>
+								<span>ФСБ 00124675 от 16.12.2014</span>
+							</div>
+							<div class="masters__item-content">
+								<h2 class="masters__title">«Омникомм-Саранск»</h2>
+								<div class="masters__city">Саранск</div>
+								<div class="masters__recall not-active"><span>0</span><button class="recall-btn">отзывов</button></div>
+								<div class="masters__img"></div>
+							</div>
+						</a>
+						<a href="#" class="masters__item">
+							<div class="masters__item-numbers">
+								<span>РФ 0564</span>
+								<span>RUS 603</span>
+								<span>ФСБ 00124675 от 16.12.2014</span>
+							</div>
+							<div class="masters__item-content">
+								<h2 class="masters__title">«Югтахосуперконтроль»</h2>
+								<div class="masters__city">Новороссийск</div>
+								<div class="masters__recall not-active"><span>0</span><button class="recall-btn">отзывов</button></div>
+								<div class="masters__img"><img src="img/fond-logo.png" alt=""><div class="masters__tooltip">Участник благотворительного фонда "Шанс на счастье"</div></div>
+							</div>
+						</a>
+						<a href="#" class="icon-down-open-big questions__more masters__btn-more">Показать еще</a>
+					</div>
+				</section>
+				<aside class="col-md-4 col-xs-12 secondary-content">
+					<div class="services-contacts">
+						<div class="hotline">Бесплатная горячая линия<span>8-800-500-43-69</span></div>
+						<div class="mail">info@naviportal.ru</div>
+						<a href="#" class="services-contacts__btn">Оформить заявку</a>
+						<p class="hint-comment">А мы подберем мастерскую специально под ваши задачи</p>
+					</div>
+					<div class="block-banner">
+						<img src="img/banner-test.jpg" alt="Баннер">
+					</div>
+					<div class="rss-block">
+						<h4 class="rss-block__title">Рассылка навипорта</h4>
+						<form action="#" class="rss-block__form">
+							<input class="rss-block__email" type="email" placeholder="Введите ваш E-mail">
+							<button type="submit" class="rss-block__btn"></button>
+							<p class="error-text">Необходимо указать электронную почту или мы не сможем отправить письмо</p>
+						</form>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<section class="eop-callback services-callback">
+			<div class="container">
+				<h2 class="eop-callback__title services-callback__title">Мы подберем для вас надёжную мастерскую в вашем городе</h2>
+				<div class="row no-margin">
+					<div class="col-md-6 eop-callback__order-call">
+						<div class="tel">8-800-500-43-69</div>
+						<p class="descr">Если вы хотите задать вопрос по телефону, позвоните нам по бесплатному номеру указанному выше или закажите обратный звонок, и мы перезвоним вам сами.</p>
+						<form action="#">
+							<input type="text" placeholder="Ваше имя">
+							<input type="tel" placeholder="Ваш телефон">
+							<input type="submit" value="Заказать звонок">
+							<p class="error-text">Некорректно введен номер телефона</p>
+						</form>
+					</div>
+					<div class="col-md-6 eop-callback__order-qs">
+						<section class="ask-question">
+							<form action="#" class="ask-question__form">
+								<select name="theme" id="" class="simple-select">
+									<option value="#">Выберите ваш город</option>
+									<option value="#">Москва</option>
+									<option value="#">Питер</option>
+									<option value="#">Сочи</option>
+								</select>
+								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="email" name="email" placeholder="Ваша электронная почта">
+								<textarea name="question" cols="30" rows="8" placeholder="Какие работы необходимо выполнить?"></textarea>
+								<input type="submit" value="Отправить запрос" class="ask-question__form-send">
+								<span class="hint-comment">Срок рассмотрения обращений - до 3 дней</span>
+								<p class="error-text">Необходимо указать электронную почту или мы не сможем отправить письмо</p>
+							</form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<section class="page-footer__nav">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Инфоцентр</h4>
+						<ul>
+							<li>
+								<a href="#">Новости и статьи</a>
+							</li>
+							<li>
+								<a href="#">Электронная общественная приемная</a>
+							</li>
+							<li>
+								<a href="authors.html">Авторы и эксперты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Решения</h4>
+						<ul>
+							<li>
+								<a href="#">Мастерским</a>
+							</li>
+							<li>
+								<a href="#">Перевозчикам</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Мастерские</h4>
+						<ul>
+							<li>
+								<a href="#">Сеть мастерских</a>
+							</li>
+							<li>
+								<a href="#">Черный список мастерских</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Naviport</h4>
+						<ul>
+							<li>
+								<a href="#">О проекте</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page-footer__bottombar">
+				<div class="row">
+					<div class="col-md-9 col-xs-12 copywrites">
+						<p class="copywrites__copy">© 2016 Naviport. Информационный портал о российской тахографии</p>
+						<a href="#" class="copywrites__using">Пользовательское соглашение</a>
+						<div class="copywrites__callback">
+							<span class="copywrites__tel">8-800-500-43-69</span>
+							<a href="#" class="copywrites__callback-btn">Обратная связь</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-pull-1 col-xs-12 ya-social">
+						<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj" data-counter=""></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="https://yastatic.net/share2/share.js" charset="utf-8"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

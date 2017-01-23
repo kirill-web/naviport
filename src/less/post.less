@@ -1,0 +1,119 @@
+.post-simple {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 0 60px;
+	padding-bottom: 15px;
+	&__title {
+		margin: 0;
+		padding-top: 24px;
+		margin-bottom: 24px;
+	}
+	&__subtitle {
+		margin-top: 32px;
+		margin-bottom: 20px;
+	}
+	blockquote {
+		margin-top: 40px;
+		margin-bottom: 35px;
+	}
+	p + .ya-social {
+		margin-bottom: 0px;
+		margin-top: 60px;
+	}
+	&__img-wrapper {
+		font-size: 0;
+	}
+	.img-dib {
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+		margin-right: 2%;
+	}
+	.ya-social {
+		min-height: 25px;
+		margin-top: 25px;
+		&:first-of-type {
+			margin-bottom: 25px;
+		}
+	}
+	.activity {
+		text-align: right;
+	}
+}
+
+.more-videos {
+	.author-articles__img {
+		&:before {
+			content: '';
+			width: 81px;
+			height: 79px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-image: url(../img/video-icon.png);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+	}
+}
+
+.post-expert {
+	&__title-qs {
+		font-size: 18px;
+		line-height: 24px;
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+	&__member {
+		position: relative;
+		padding-top: 13px;
+		padding-bottom: 7px;
+		border-top: 2px solid @light-grey;
+		border-bottom: 2px solid @light-grey;
+		margin-bottom: 30px;
+		margin-top: 12px;
+		&-img {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 21px;
+			width: 60px;
+			height: 60px;
+			background-color: @grey;
+		}
+		&-descr {
+			display: inline-block;
+			vertical-align: top;
+			width: 70%;
+			h3 {
+				margin-top: 0;
+				margin-bottom: 7px;
+				font-size: 16px;
+				line-height: 20px;
+				font-weight: bold;
+				color: @light-blue;
+			}
+			p {
+				color: @grey;
+				font-size: 15px;
+				line-height: 20px;
+				margin-top: 0;
+				margin-bottom: 8px;
+			}
+		}
+		&.expert {
+			&:before {
+				left: ~"calc(100% - 90px)";
+				top: -27px;
+			}
+		}
+	}
+	p + .ya-social {
+		margin-bottom: 60px;
+		margin-top: 35px;
+	}
+	.answer-block__tags {
+		padding-top: 0;
+	}
+}

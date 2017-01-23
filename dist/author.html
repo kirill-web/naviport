@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Один автор</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="page-header__topbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="col-md-3">
+						<a href="about.html" class="icon-info-circled-alt page-header__topbar-about">О проекте</a>
+					</div>
+					<a href="#" class="icon-mail page-header__topbar-callback--mini"></a>
+					<div class="col-md-5 col-sm-7 page-header__topbar-hotline">
+						<span>Бесплатная горячая линия</span>
+						<span class="tel">8-800-500-43-69</span>
+					</div>
+					<div class="col-md-4 col-sm-5 col-xs-12 page-header__topbar-entrance">
+						<a href="#" class="log-in"><span>Войти</span></a>
+						<a href="#" class="sign-in">Зарегистироваться</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-header__mainbar">
+			<div class="container">
+				<div class="row no-margin">
+					<div class="page-header__company col-md-6 col-xs-8">
+						<a href="index.html" class="page-header__logo">
+							<img src="img/logo_naviport.svg" alt="Naviport" width="168" height="28">
+						</a>
+						<div class="page-header__info"><span>Информационный портал о российской тахографии</span></div>
+					</div>
+					<div class="col-md-6 col-xs-4 search-opened">
+						<form action="#">
+							<i class="border"></i>
+							<input type="text" placeholder="Что вы ищите?">
+							<button type="submit" class="search-toggle"></button>
+						</form>
+					</div>
+					<nav class="col-md-5 page-header__nav">
+						<ul>
+							<li><a href="#" class="icon-down-open-big" id="info-toggle"><span>Инфоцентр</span></a></li>
+							<li><a href="#">Решения</a></li>
+							<li><a href="#">Мастерские</a></li>
+						</ul>
+					</nav>
+					<div class="col-md-1 col-xs-4 page-header__menu-btns">
+						<a href="#" class="menu-toggle"></a>
+						<a href="#" class="search-toggle" id="search-open"></a>
+						<div class="page-header__menu--mini accordion" id="accordion">
+							<h3>Инфоцентр</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Новости и статьи</a></li>
+									<li><a href="authors.html">Авторы и эксперты</a></li>
+									<li><a href="#">Электронная общественная приемная</a></li>
+								</ul>
+							</div>
+							<h3>Решения</h3>
+							<div class="accordion__item">
+								<ul>
+									<li><a href="#">Пункт 1</a></li>
+									<li><a href="#">Пункт 2</a></li>
+									<li><a href="#">Пункт 3</a></li>
+								</ul>
+							</div>
+							<a href="#">Мастерские</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<div class="row no-margin">
+						<div class="col-md-3 dropdown-menu__nav">
+							<ul>
+								<li><a href="#" class="dropdown-menu__nav-item active" id="first-nav">Новости и статьи</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="second-nav">Авторы и эксперты</a></li>
+								<li><a href="#" class="dropdown-menu__nav-item" id="third-nav">Электронная общественная приемная</a></li>
+							</ul>
+						</div>
+						<div class="col-md-9 dropdown-menu__content">
+							<div class="dropdown-menu__content-item" id="news">
+								<div class="newslist__small">
+									<div class="row no-margin">
+										<div class="col-md-3 newslist__small-item expert-opi">
+											<a href="#"><img src="img/a-photo-1.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Болгары очень дружелюбны, 
+приветливы, и особенно
+									гостеприимны</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-2.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Геннадий Мирошин: «К 2018 году 
+система тахографического 
+контроля будет окончательно 
+									построена»</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 newslist__small-item">
+											<a href="#"><img src="img/a-photo-3.jpg" alt="" class="newslist__small-img"></a>
+											<div class="newslist__small-descr">
+												<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more newslist__small-btn">Все новости и статьи</a>
+								</div>
+							</div>
+							<div class="dropdown-menu__content-item" id="authors">
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="img/photo-1.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Беспалова Оксана Александровна</a></h3>
+											<p class="authors__item-position">Коммерческий директор ООО «Тахобанк»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img edition"><img src="" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Сушинов Юрий</a></h3>
+											<p class="authors__item-position">Шеф-редактор Навипорта</p>
+										</div>
+									</div>
+								</div>
+								<div class="row no-margin">
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-2.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Конягин Кирилл Александрович</a></h3>
+											<p class="authors__item-position">Генеральный директор «Атол Драйв»</p>
+										</div>
+									</div>
+									<div class="col-md-6 authors__item">
+										<div class="authors__item-img expert"><img src="img/photo-3.jpg" alt=""></div>
+										<div class="authors__item-descr">
+											<h3 class="authors__item-title"><a href="author.html"> Мирошин Геннадий Святославович</a></h3>
+											<p class="authors__item-position">Эксперт Ассоциации организаций в сфере развития тахографического контроля «Рустахоконтроль»</p>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="icon-right-open-big questions__more authors__item-btn">Все авторы и эксперты</a>
+							</div>
+							<div class="dropdown-menu__content-item" id="info">
+								<div class="popular-qs">
+									<h2 class="popular-qs__title">Популярные вопросы</h2>
+									<div class="row no-margin">
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли использовать тахограф 
+без СКЗИ?</a>
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Отличия тахографов ЕСТР
+Можно ли иметь больше одной 
+карты водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">Как правильно работать
+по тахографу?</a>
+										</div>
+										<div class="col-md-6">
+											<a href="" class="popular-qs__item">Можно ли устанавливать карту 
+водителя во второй слот при 
+пустом первом?</a>
+											<a href="" class="popular-qs__item">Какой срок изготовления карты 
+водителя?</a>
+											<a href="" class="popular-qs__item">Сколько дней разрешено водить 
+автомобиль без карты водителя ?</a>
+											<a href="" class="popular-qs__item">На какой транспорт необходимо
+устанавливать тахографы?</a>
+											<a href="" class="popular-qs__item">Аналоговые тахографы запрещены?</a>
+										</div>
+									</div>
+									<a href="#" class="icon-right-open-big questions__more popular-qs__btn">Все вопросы и ответы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="container">
+			<div class="row no-margin">
+				<section class="col-md-8 col-xs-12 main-content">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Инфоцентр</a></li>
+							<span class="slash"> / </span>
+							<li><a href="authors.html">Авторы и эксперты</a></li>
+						</ul>
+					</div>
+					<section class="author">
+						<h1 class="author__title">Беспалова Оксана Александровна</h1>
+						<div class="author__info">
+							<div class="author__img edition"><img src="img/photo-1-big.jpg" alt=""></div>
+							<div class="author__descr">
+								<div class="author__descr-item">
+									<h3 class="author__descr-title">Должность</h3>
+									<p class="author__descr-info">Коммерческий директор ООО «Тахобанк»</p>
+								</div>
+								<div class="author__descr-item">
+									<h3 class="author__descr-title">Опыт работы</h3>
+									<p class="author__descr-info">Опыт работы в области транспорта с 2006года. Аттестат Ространснадзора выдан в 2012 году. Специалист по защите информации, опыт с 2004 года.</p>
+								</div>
+								<div class="author__descr-item">
+									<h3 class="author__descr-title">Образование</h3>
+									<p class="author__descr-info">Опыт работы в области транспорта с 2006года. Аттестат Ространснадзора выдан в 2012 году. Специалист по защите информации, опыт с 2004 года.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="back-to-authors">
+						<a href="authors.html" class="icon-left-open-big">К списку авторов и экспертов</a>
+					</div>
+					<section class="author-articles">
+						<h2 class="author-articles__title">Статьи с участием автора</h2>
+						<div class="author-articles__item">
+							<a href="#"><img src="img/a-photo-1.jpg" alt="" class="author-articles__img"></a>
+							<div class="author-articles__descr">
+								<h3><a href="#">Болгары очень дружелюбны, 
+приветливы, и особенно
+									гостеприимны</a></h3>
+								<p>Запрет аналоговых тахографов в России</p>
+								<div class="icon-comment comments">24</div>
+								<div class="icon-eye-1 views">432</div>
+							</div>
+						</div>
+						<div class="author-articles__item">
+							<a href="#"><img src="img/a-photo-2.jpg" alt="" class="author-articles__img"></a>
+							<div class="author-articles__descr">
+								<h3><a href="#">Геннадий Мирошин: «К 2018 году 
+система тахографического 
+контроля будет окончательно 
+									построена»</a></h3>
+								<p>О роли тахографов как контролирующих устройств, о пробелах в законодательстве и будущем развитии тахографии в России </p>
+								<div class="icon-comment comments">4</div>
+								<div class="icon-eye-1 views">128</div>
+							</div>
+						</div>
+						<div class="author-articles__item">
+							<a href="#"><img src="img/a-photo-3.jpg" alt="" class="author-articles__img"></a>
+							<div class="author-articles__descr">
+								<h3><a href="#">Какие тахографы необходимо 
+									устанавливать?</a></h3>
+								<p>О проблемах в законодательстве, правовой неопределенности и как следствие – возникающих у автоперевозчиков вопросах при применении тахографов </p>
+								<div class="icon-comment comments">32</div>
+								<div class="icon-eye-1 views">321</div>
+							</div>
+						</div>
+						<a href="#" class="icon-down-open-big questions__more author-articles__btn">Показать еще 10</a>
+					</section>
+					<div class="all-news">
+						<a href="#" class="icon-left-open-big">Все новости и статьи</a>
+					</div>
+				</section>
+				<aside class="col-md-4 col-xs-12 secondary-content">
+					<div class="newest-questions">
+						<h4 class="newest-questions__title">Самое важное</h4>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Рост числа мастерских 
+								в 2015 году</a></h5>
+							<div class="icon-comment comments">127</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Мастерским необходимо
+								получать новые разрешения и документы</a></h5>
+							<div class="icon-comment comments">4</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Отчет по рейду №7</a></h5>
+							<div class="icon-comment comments">0</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Штрафы растут. Новое
+								в 2016 году</a></h5>
+							<div class="icon-comment comments">13</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<div class="newest-questions__item">
+							<h5 class="newest-questions__item-title"><a href="#"> Отмена аналоговых тахографов. Обзор альтернатив</a></h5>
+							<div class="icon-comment comments">1</div>
+							<div class="icon-eye-1 views">432</div>
+						</div>
+						<a href="#" class="icon-right-open-big newest-questions__btn">Все новости</a>
+					</div>
+					<div class="rss-block">
+						<h4 class="rss-block__title">Рассылка навипорта</h4>
+						<form action="#" class="rss-block__form">
+							<input class="rss-block__email" type="email" placeholder="Введите ваш E-mail">
+							<button type="submit" class="rss-block__btn"></button>
+							<p class="error-text">Необходимо указать электронную почту
+или мы не сможем отправить письмо</p>
+						</form>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<section class="page-footer__nav">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Инфоцентр</h4>
+						<ul>
+							<li>
+								<a href="#">Новости и статьи</a>
+							</li>
+							<li>
+								<a href="#">Электронная общественная приемная</a>
+							</li>
+							<li>
+								<a href="authors.html">Авторы и эксперты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Решения</h4>
+						<ul>
+							<li>
+								<a href="#">Мастерским</a>
+							</li>
+							<li>
+								<a href="#">Перевозчикам</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Мастерские</h4>
+						<ul>
+							<li>
+								<a href="#">Сеть мастерских</a>
+							</li>
+							<li>
+								<a href="#">Черный список мастерских</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-12 page-footer__item">
+						<h4 class="page-footer__item-title">Naviport</h4>
+						<ul>
+							<li>
+								<a href="#">О проекте</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page-footer__bottombar">
+				<div class="row">
+					<div class="col-md-9 col-xs-12 copywrites">
+						<p class="copywrites__copy">© 2016 Naviport. Информационный портал о российской тахографии</p>
+						<a href="#" class="copywrites__using">Пользовательское соглашение</a>
+						<div class="copywrites__callback">
+							<span class="copywrites__tel">8-800-500-43-69</span>
+							<a href="#" class="copywrites__callback-btn">Обратная связь</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-pull-1 col-xs-12 ya-social">
+						<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj" data-counter=""></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="https://yastatic.net/share2/share.js" charset="utf-8"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
